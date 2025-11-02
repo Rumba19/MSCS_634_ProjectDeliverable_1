@@ -7,9 +7,35 @@
 **Primary Goal:** Prepare the dataset for predictive health analytics
 
 ---
+# Dataset Description
+**Measurements reflect known cardiovascular risk and diagnostic factors:**
+- age (years)
+- sex (0 female, 1 male)
+- cp (chest pain type)
+- trestbps (resting blood pressure in mm Hg)
+- chol (cholesterol in mg/dl)
+- fbs (fasting blood sugar > 120 mg/dl)
+- restecg (resting ECG results)
+- thalach (max heart rate achieved)
+- exang (exercise-induced angina)
+- oldpeak (ST depression induced by exercise)
+- slope (slope of peak exercise ST segment)
+- ca (number of major vessels)
+- thal (defect type)
+- target (0 no disease, 1–4 disease severity)
+**The chosen dataset supports:**
+- binary classification (disease vs no-disease)
+- clustering of patient cardiovascular profiles
+- exploration of feature interactions important in clinical decision-support systems
 
 ## Dataset Summary
 This dataset contains clinical measurements collected from heart disease patients, including:
+**Observed:**
+- No missing values after load and conversion
+- No duplicate records
+- One naming inconsistency: original “condition” label renamed to “target” for clarity
+- Required new label “target_bin” created: (target > 0) → 1 else 0
+**Interpretation:** Source data is already structured and complete.
 
 - Demographics: Age, Sex  
 - Diagnostic results: Resting ECG, Exercise-induced angina  
