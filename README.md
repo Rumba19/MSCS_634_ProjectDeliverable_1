@@ -91,13 +91,13 @@
 - **Features:** 14 attributes + 1 target variable
 - **Time Period:** Historical medical records from Cleveland Clinic
 - **Population:** Mixed demographics, various age groups
-![dataload](DataCollection/de_head.png)
+![dataload](DataCollection/df_head.png)
 ### **Initial Data Loading**
 ```python
 df = pd.read_csv('/content/heart_cleveland_upload.csv')
 ```
 
-![dataload](DataCollection/de_describde.png)
+![dataload](DataCollection/df_describe.png)
 
 ![dataload](DataCollection/distribution.png)
 **Observations from Initial Load:**
