@@ -123,6 +123,7 @@ df = pd.read_csv('/content/heart_cleveland_upload.csv')
 - **Alternative considered:** Row deletion (would lose valuable medical cases)
 
 **Result:** Zero missing values after cleaning
+
 ![cleaning](DataCleaning/data_cleaning.png)
 
 ### **2. Duplicate Detection and Removal**
@@ -140,6 +141,7 @@ df = pd.read_csv('/content/heart_cleveland_upload.csv')
 - Rationale: Duplicates can skew analysis and model training
 
 **Result:** All duplicate records removed
+
 ![cleaning](DataCleaning/data_cleaning.png)
 
 ### **3. Data Type Corrections**
@@ -233,6 +235,7 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - Most patients 50-60 years old
    - Mean age: ~54 years
    - Median age: ~56 years
+
 ![age](DataVisualization/age.png)
 
 2. **Gender Distribution**
@@ -240,6 +243,7 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - Female: ~32% of patients
    - Gender imbalance in dataset
    - May require stratification in modeling
+
 ![DataVisualization](DataVisualization/gender.png)
 
 3. **Chest Pain Type**
@@ -247,28 +251,33 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - Type 3 (asymptomatic): Second most common
    - Distinct patterns by type
    - Strong predictor candidate
-   ![chestpain](DataVisualization/chestpain.png)
+
+
+![chestpain](DataVisualization/chestpain.png)
 
 4. **Blood Pressure Distribution**
    - Mean: ~131 mm Hg (slightly elevated)
    - Normal distribution shape
    - Some high outliers (>160)
    - Many patients show hypertension
-   ![bp](DataVisualization/bloodpressure.png)
+
+![bp](DataVisualization/bloodpressure.png)
 
 5. **Cholesterol Distribution**
    - Mean: ~246 mg/dl (borderline high)
    - Right-skewed distribution
    - Some extreme values (>400)
    - Wide variation in patient cholesterol levels
-   ![cholestrol](DataVisualization/cholestrolDis.png)
+
+![cholestrol](DataVisualization/cholestrolDis.png)
 
 6. **Maximum Heart Rate**
    - Mean: ~150 bpm
    - Left-skewed distribution
    - Range: 71-202 bpm
    - Varies significantly by patient fitness
-   ![hr](DataVisualization/maxHR.png)
+
+![hr](DataVisualization/maxHR.png)
 
 
 7. **Disease Distribution**
@@ -276,7 +285,9 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - No disease: 138 patients (46%)
    - Relatively balanced classes
    - Good for classification modeling
-   ![DataVisu](DataVisualization/disease.png)
+
+
+![DataVisu](DataVisualization/disease.png)
 
 **Comparative Box Plots**
 
@@ -285,14 +296,16 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - Patients without disease: Younger (median ~52)
    - Overlap exists: Age alone not definitive
    - Insight: Age is a risk factor but not sole predictor
-   ![age](DataVisualization/age_disease.png)
+   
+![age](DataVisualization/age_disease.png)
 
 9. **Cholesterol vs Disease Status**
    - Similar distributions for both groups
    - Disease group: Slightly higher median
    - Large overlap between groups
    - Insight: Cholesterol alone insufficient for diagnosis
-   ![choles](DataVisualization/cholestrol.png)
+
+![choles](DataVisualization/cholestrol.png)
 
 10. **Max Heart Rate vs Disease Status**
     - Disease patients: Lower max heart rate (median ~139)
