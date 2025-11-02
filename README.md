@@ -241,11 +241,13 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - Gender imbalance in dataset
    - May require stratification in modeling
 ![DataVisualization](DataVisualization/gender.png)
+
 3. **Chest Pain Type**
    - Type 0 (typical angina): Most common
    - Type 3 (asymptomatic): Second most common
    - Distinct patterns by type
    - Strong predictor candidate
+   ![chestpain](DataVisualization/chestpain.png)
 
 4. **Blood Pressure Distribution**
    - Mean: ~131 mm Hg (slightly elevated)
@@ -259,14 +261,14 @@ df['target_binary'] = (df['target'] > 0).astype(int)
    - Right-skewed distribution
    - Some extreme values (>400)
    - Wide variation in patient cholesterol levels
-   ![cholestrol](DataVisualization/cholestrol.png)
+   ![cholestrol](DataVisualization/cholestrolDis.png)
 
 6. **Maximum Heart Rate**
    - Mean: ~150 bpm
    - Left-skewed distribution
    - Range: 71-202 bpm
    - Varies significantly by patient fitness
-   ![hr](DataVisualization/heart_rate.png)
+   ![hr](DataVisualization/maxHR.png)
 
 
 7. **Disease Distribution**
