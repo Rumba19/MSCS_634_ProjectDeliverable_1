@@ -2,7 +2,8 @@
 ## Data Collection, Cleaning, and Exploration
 
 ---
-
+**NOTE**: notebook file and screenshots are not loaded in github. So, sharing link of Google Colab that will give results in tabular and also Visualization;
+https://colab.research.google.com/drive/1j6IIGV_lwmeATnXYft58mX44iCdEULGD#scrollTo=cL96p8BsYwXi
 ## Dataset Selection and Justification
 
 ### **Dataset: Heart Disease (Cleveland Database)**
