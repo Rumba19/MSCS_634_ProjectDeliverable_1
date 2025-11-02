@@ -83,7 +83,7 @@
 - **Alternative Source:** Kaggle (cleaned version)
 - **Format:** CSV file
 - **File Name:** `heart_cleveland_upload.csv`
-![dataload](DataCollection/dataload.png)
+![dataload](DataCollection/datacollect.png)
  
 
 ### **Dataset Characteristics**
